@@ -1,0 +1,5 @@
+ "_id": "6442ec08d6fd1d7b927793b9",
+"name": "juan",
+"dni": "12345",
+"email": "juan@gmail.com",
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDJlYzA4ZDZmZDFkN2I5Mjc3OTNiOSIsImlhdCI6MTY4MjM2MDE4NywiZXhwIjoxNjg0MDg4MTg3fQ.iIZdOOZ2-j6uQyxesVCHpkjFzP2FsL9moG-yngNIwjU"

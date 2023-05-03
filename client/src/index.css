@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+}
+
+p {
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.container {
+  width: 100%;
+  background-color: #ffffff;
+  max-width: 100%;
+  text-align: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+
+.form {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.recover-password {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  color: rgb(64, 63, 63);
+  margin-bottom: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+.recover-password-responsive{
+  display: none;
+  margin-top: 4rem;
+  color: #ea4335;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.goals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.goal {
+  background-color: #f4f4f4;
+  margin: 10px 0;
+  padding: 20px 0 10px;
+  position: relative;
+}
+
+.goal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #f07000;
+  border-radius: 11.5px;
+  margin-bottom: 2px;
+  font-family: inherit;
+  background-color: #fff6f5;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+}
+
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 30px;
+  background: #ff6900;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btn-block {
+  width: 10rem;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.containerPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.sectionRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 85%;
+  height: 100%;
+  background-color: #fcf6ee;
+}
+
+.sectionLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 55vw;
+  height: 100vh;
+}
+
+.leftContain {
+  width: 55vw;
+  height: 100vh;
+}
+
+.orderLogo{
+  position: absolute;
+  width: 19.5%;
+  height: 22%;
+}
+
+
+.imgLogoLogin {
+  display: none;
+  margin-left: 4.1vh;
+  font-weight: none;
+  margin-bottom: 3rem;
+}
+
+.imgLogoRegister {
+  display: none;
+  margin-left: 4.1vh;
+  font-weight: none;
+  margin-bottom: -1rem;
+}
+
+
+.containerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBarLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 4rem;
+  margin-right: 8rem;
+}
+
+.navBarRegister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 4rem;
+  margin-right: 8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+  display: inline;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.anclaOne {
+  text-decoration: none;
+  background-color: #f07000;
+  padding: 18px 38px;
+  border-radius: 25px;
+  color: white;
+}
+
+.anclaTwo {
+  text-decoration: none;
+  background-color: white;
+  padding: 18px 30px;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  border: 1px solid #f07000;
+}
+
+.txtInfoLogin {
+  font-size: 1rem;
+  width: 45%;
+  color: #000000;
+}
+
+.txtInfoRegister {
+  font-size: 1rem;
+  width: 50%;
+  color: #000000;
+}
+
+.register{
+  display: none;
+  justify-content: center;
+  color: #929292;
+}
+
+.info-register{
+  justify-content: center;
+  color: black;
+  margin-left: 0.5rem;
+  color: #ea4335;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+/* media queries */
+
+@media (max-width: 1500px) and (min-width: 1145px) {
+
+
+  .imgLogoLogin {
+    display: none;
+    margin-left: 4.1vh;
+    font-weight: none;
+  }
+
+  .imgLogoRegister {
+    display: none;
+    margin-left: 4.1vh;
+    font-weight: none;
+  }
+
+  .navBarLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+  }
+
+  .navBarRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+  }
+
+  li {
+    line-height: 2.2;
+    display: inline;
+    z-index: 1;
+    padding: 1rem;
+  }
+
+}
+
+@media (max-width: 1145px) and (min-width: 600px) {
+  .form {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 1.5rem;
+  }
+
+  .heading p {
+    font-size: 1rem;
+    width: 80%;
+    text-align: left;
+    color: #555;
+  }
+
+  .recover-password {
+    display: flex;
+    justify-content: left;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+
+  .sectionLeft {
+    display: none;
+  }
+
+  .imgLogoLogin {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .imgLogoRegister {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .btn-block {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .navBarLogin {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+  }
+
+  .navBarRegister {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+  }
+
+  .sectionRight {
+    background-color: white;
+  }
+
+
+  .recover-password {
+    display: none;
+  }
+  
+  .recover-password-responsive{
+    display: flex;
+    margin-top: 2.2rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    margin-left: 0.2rem;
+  }
+  .register{
+    display: flex;
+    color: #3b3a3a;
+  }
+
+
+
+}
+
+@media (max-width: 600px) {
+  .form {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 1.5rem;
+  }
+
+  .heading p {
+    font-size: 1rem;
+    width: 80%;
+    text-align: left;
+    color: #555;
+  }
+
+  .recover-password {
+    display: flex;
+    justify-content: left;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+
+  .sectionLeft {
+    display: none;
+  }
+
+  .imgLogoLogin {
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .imgLogoRegister {
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .btn-block {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .sectionRight {
+    background-color: #ffffff;
+  }
+
+  .navBarLogin {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+  }
+
+  .navBarRegister {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+  }
+
+  .recover-password {
+    display: none;
+  }
+  
+  .recover-password-responsive{
+    display: flex;
+    margin-top: 2.2rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    margin-left: 0.2rem;
+  }
+  .register{
+    display: flex;
+    color: #3b3a3a;
+  }
+
+}
+
+
+/* HomePage */
+
+main{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(165.12deg, #FF6900 20.66%, #3E3738 89.74%);
+}
+
+.containerWhite{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.containerPlate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.iconWhite{
+  height: 235px;
+  width: 330px;
+}
+
+.iconPlate{
+  width: 520px;
+  height: 450px;
+  border-radius: 55%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
